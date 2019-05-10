@@ -30,8 +30,8 @@ pub mod conversion{
         (b1 <<16) | (b0 << 0) 
     }
     pub fn u32_to_u16(x:u32) -> [u16;2] {
-        let b0 : u32 = (x >> 16) as u16;
-        let b1 : u32 = x as u16;
+        let b0 : u16 = (x >> 16) as u16;
+        let b1 : u16 = x as u16;
         [b1, b0]
     }
 }
@@ -67,8 +67,8 @@ pub mod conversion {
         (b0 <<16) | (b1 << 0) 
     }
     pub fn u32_to_u16(x:u32) -> [u16;2] {
-        let b0 : u32 = (x >> 16) as u16;
-        let b1 : u32 = x as u16;
+        let b0 : u16 = (x >> 16) as u16;
+        let b1 : u16 = x as u16;
         [b0, b1]
     }
 }
