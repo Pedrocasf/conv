@@ -1,4 +1,4 @@
-#[cfg(feature = "Big Endian")]
+#[cfg(feature = "BigEndian")]
 pub mod conversion{
     pub fn u8_to_u32(val:&[u8])->u32{
         let b0 = val[0] as u32;
@@ -35,7 +35,7 @@ pub mod conversion{
         [b1, b0]
     }
 }
-#[cfg(feature = "Little Endian")]
+#[cfg(feature = "LittleEndian")]
 pub mod conversion {
     pub fn u8_to_u32(val:&[u8])->u32{
         let b0 = val[0] as u32;
